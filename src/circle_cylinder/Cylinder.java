@@ -1,3 +1,7 @@
+package circle_cylinder;
+
+import circle_cylinder.Circle;
+
 public class Cylinder extends Circle {
 
         private double chieucao;
@@ -24,18 +28,18 @@ public class Cylinder extends Circle {
             this.chieucao = chieucao;
         }
 
-        @Override
-        public String toString() {
-            return "Cylinder{" +
-                    "chieucao=" + chieucao +
-                    ", toaDoX=" + toaDoX +
-                    ", toaDoY=" + toaDoY +
-                    ", radius=" + radius +
-                    ", color='" + color + '\'' +
-                    '}';
-        }
+    @Override
+    public String toString() {
+        return "circle_cylinder.Cylinder{" +
+                "chieucao=" + chieucao +
+                ", toaDoX=" + toaDoX +
+                ", toaDoY=" + toaDoY +
+                ", radius=" + radius +
+                ", color='" + color + '\'' +
+                '}';
+    }
 
-        public double tinhTheTich(){
+    public double tinhTheTich(){
             double theTich = (this.radius * this.radius * 3.14) * this.chieucao;
             return theTich;
         }

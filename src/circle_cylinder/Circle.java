@@ -1,3 +1,5 @@
+package circle_cylinder;
+
 public class Circle {
     public double toaDoX;
     public double toaDoY;
@@ -77,7 +79,7 @@ public class Circle {
 
     @Override
     public String toString() {
-        return "Circle{" +
+        return "circle_cylinder.Circle{" +
                 "toaDoX=" + toaDoX +
                 ", toaDoY=" + toaDoY +
                 ", radius=" + radius +
