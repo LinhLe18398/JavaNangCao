@@ -1,17 +1,26 @@
+import java.util.Scanner;
+
 public class Cau2 {
     public static void main(String[] args) {
-        int diemThi[] = {7, 8, 9, 15, 3, 5, 6};
-        findMaxScore(diemThi);
+        int diemthi[] = new int[5];
+        for (int i = 0; i < diemthi.length; i++) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Nhap phan tu thu " + i);
+            diemthi[i] = scanner.nextInt();
+        }
+
+        findmax(diemthi);
     }
 
-    public static int findMaxScore(int arr[]) {
-        int max = arr[0];
-        for (int i = 0; i < arr.length; i++) {
-            if (max < arr[i]) {
-                max = arr[i];
+    public static int findmax(int array[]) {
+
+        int max = array[0];
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > max) {
+                max = array[i];
             }
         }
-        System.out.println("Diem thi cao nhat la: " + max);
+        System.out.println("Gia tri lon nhat la: " + max);
         return max;
     }
 }

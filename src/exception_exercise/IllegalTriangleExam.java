@@ -2,12 +2,7 @@ package exception_exercise;
 
 import java.util.Scanner;
 
-public class IllegalTriangleException extends Exception {
-
-    public IllegalTriangleException(String message) {
-        super(message);
-    }
-
+public class IllegalTriangleExam {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhap canh thu nhat: ");
